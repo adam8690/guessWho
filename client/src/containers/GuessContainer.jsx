@@ -1,4 +1,5 @@
 import React from 'react'
+import GuessComponent from '../components/GuessComponent'
 
 class GuessContainer extends React.Component{
 
@@ -6,6 +7,7 @@ class GuessContainer extends React.Component{
         return (
             <div>
                 <p>Guess Container</p>
+                <GuessComponent />
             </div>
         )
     }
