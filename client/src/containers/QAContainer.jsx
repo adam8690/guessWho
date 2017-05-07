@@ -12,7 +12,8 @@ class QAContainer extends React.Component{
         this.detailChange = this.detailChange.bind(this)
         this.state = {
             selectedQuestionIndex: 0,
-            selectedDetailIndex: 0
+            selectedDetailIndex: 0,
+            answer:""
         }
     }
 
@@ -28,33 +29,31 @@ class QAContainer extends React.Component{
         
         switch(this.state.selectedQuestionIndex){
             case 0: if(this.props.selectedCard.hair === this.props.questions[questionText][this.state.selectedDetailIndex]){
-                console.log("yes");
+                this.setState({answer: "Yes"})
             }
-            else console.log("no") 
+            else this.setState({answer:"No"}) 
             break;
             case 1: if(this.props.selectedCard.glasses === this.props.questions[questionText][this.state.selectedDetailIndex]){
-                console.log("yes");
+               this.setState({answer: "Yes"})
             }
-            else console.log("no") 
+            else this.setState({answer:"No"}) 
             break;
             case 2: if(this.props.selectedCard.eyes === this.props.questions[questionText][this.state.selectedDetailIndex]){
-                console.log("yes");
+                this.setState({answer: "Yes"})
             }
-            else console.log("no") 
+            else this.setState({answer:"No"}) 
             break;
             case 3: if(this.props.selectedCard.gender === this.props.questions[questionText][this.state.selectedDetailIndex]){
-                console.log("yes");
+                this.setState({answer: "Yes"})
             }
-            else console.log("no") 
+            else this.setState({answer:"No"}) 
             break;
             case 4: if(this.props.selectedCard.surname === this.props.questions[questionText][this.state.selectedDetailIndex]){
-                console.log("yes");
+                this.setState({answer: "Yes"})
             }
-            else console.log("no")    
+            else this.setState({answer:"No"}) 
             break;              
         }
-        
-        console.log('asked a question')
 
     }
 
@@ -92,7 +91,7 @@ class QAContainer extends React.Component{
                     </select>
 
                     <button onClick={this.askQuestion}>Ask!</button>
-     
+                    <p>{this.state.answer}</p>
             </div>
         )
     }
