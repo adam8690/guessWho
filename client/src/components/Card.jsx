@@ -4,7 +4,7 @@ import React from 'react'
 var Card = function(props){
     
     return (
-        <div className="card" key="card1">
+        <div className="card">
             {props.card.name}
         </div>
     )
