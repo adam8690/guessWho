@@ -6,8 +6,11 @@ class GuessContainer extends React.Component{
     render(){
         return (
             <div>
-                <p>Guess Container</p>
-                <GuessComponent />
+                <h3>Make a Guess</h3>
+                <select>
+                    <option>Guess an name</option>
+                </select>
+                <button onClick={this.props.onGuessClick}>Guess!</button>
             </div>
         )
     }

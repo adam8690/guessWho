@@ -6,8 +6,19 @@ class QAContainer extends React.Component{
     render(){
         return (
             <div>
-                <p>QAContainer</p>
-                <QAComponent />
+                <h3>Ask a question</h3>
+                
+                    <select name="Questions">
+                        <option>Questions</option>
+                    </select>
+
+                    <select name="Questions">
+                        <option>Detail</option>
+                    </select>
+                    
+                    <button onClick={this.props.answerQuestion}>Ask!</button>
+               
+                {/*<QAComponent />*/}
             </div>
         )
     }
