@@ -3,24 +3,22 @@ import Card from '../components/Card'
 
 class CardsContainer extends React.Component{
 
-    render(){
-        return (
-            <div className="cards-container">
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-            </div>
-        )
+    constructor(props){
+        super(props)
     }
+
+    render(){
+
+        const CardsDisplay = this.props.cards.map((card, index) => {
+            return <Card key={index} card={card} />
+        })
+
+
+        return(
+            <div className="cards-container" >
+                {CardsDisplay}
+            </div>
+        )}
 
 }
 
