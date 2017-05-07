@@ -21,13 +21,23 @@ constructor(props){
     ]
 }
 
+
+checkCorrectGuess = function(guess){
+    console.log("Guess button pressed", guess)
+}
+
+answerQuestion = function(question){
+    console.log("question button pressed", question)
+}
+
+
 render(){
     return (
         <div id="Game">
             <h2>Arrested Development Edition</h2>
             <CardsContainer cards={this.cards}/>
-            <QAContainer questions={this.questions}/>
-            <GuessContainer cards={this.cards}/>
+            <QAContainer questions={this.questions} answerQuestion={this.answerQuestion}/> 
+            <GuessContainer cards={this.cards} onGuessClick={this.checkCorrectGuess}/>
         </div>
     )
 }
