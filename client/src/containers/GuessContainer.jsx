@@ -14,8 +14,7 @@ class GuessContainer extends React.Component{
     }
 
     render(){
-        console.log(this.props)
-
+    
         const options = this.props.cards.map((card, index) =>{
             return (
                <option key={index} value={card.name}>{card.name}</option> 

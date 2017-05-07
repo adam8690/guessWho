@@ -15,12 +15,19 @@ class QAContainer extends React.Component{
     }
     
     render(){
+        console.log(Object.keys(this.props.questions))
+        var questions = Object.keys(this.props.questions).map((question, index) => {
+            return (
+            <option key={index}>{question}</option>
+            )
+        })
+
         return (
             <div>
                 <h3>Ask a question</h3>
                 
                     <select name="Questions" id="question">
-                        <option>Questions</option>
+                        {questions}
                     </select>
 
                     <select name="Detail" id="detail">
