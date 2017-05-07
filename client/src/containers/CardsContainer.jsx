@@ -13,7 +13,6 @@ class CardsContainer extends React.Component{
             return <Card key={index} card={card} />
         })
 
-
         return(
             <div className="cards-container" >
                 {CardsDisplay}

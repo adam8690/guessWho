@@ -5,7 +5,8 @@ var Card = function(props){
     
     return (
         <div className="card">
-            {props.card.name}
+            <img src={props.card.img} />
+            <p className="card-text">{props.card.name}</p>
         </div>
     )
     

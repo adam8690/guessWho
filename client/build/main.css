@@ -11,4 +11,11 @@ body{
 .card{
     flex:1;
     padding: 10px;
+    max-width: 100px;
+    height: 200px;
+}
+
+
+img{
+    max-width: 100%;
 }
