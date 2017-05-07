@@ -3,14 +3,32 @@ import GuessComponent from '../components/GuessComponent'
 
 class GuessContainer extends React.Component{
 
+    constructor(props){
+        super(props)
+        this.guessClick = this.guessClick.bind(this)
+    }
+
+    guessClick(){
+        var guessIndex = document.querySelector('#guess').selectedIndex
+        this.props.onGuessClick(this.props.cards[guessIndex].name)
+    }
+
     render(){
+        console.log(this.props)
+
+        const options = this.props.cards.map((card, index) =>{
+            return (
+               <option key={index} value={card.name}>{card.name}</option> 
+            )
+        })
+
         return (
             <div>
                 <h3>Make a Guess</h3>
-                <select>
-                    <option>Guess an name</option>
+                <select id="guess">
+                    {options}
                 </select>
-                <button onClick={this.props.onGuessClick}>Guess!</button>
+                <button onClick={this.guessClick}>Guess!</button>
             </div>
         )
     }
