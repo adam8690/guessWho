@@ -1,5 +1,6 @@
 body{
-    margin-left: 10%
+    margin-left: 10%;
+    font-family: sans-serif;
 }
 
 .cards-container{
@@ -14,7 +15,6 @@ body{
     max-width: 100px;
     height: 200px;
 }
-
 
 img{
     max-width: 100%;
