@@ -16,6 +16,10 @@ body{
     height: 200px;
 }
 
+.greyedOutCard{
+    opacity: 0.3;
+}
+
 img{
     max-width: 100%;
 }

@@ -12,7 +12,13 @@ class ADGameContainer extends React.Component{
         }
         this.cards = [
             {name: "Michael Bluth", hair: "Brown", eyes: "Blue", glasses:false, gender:"Male", surname:"Bluth", img: "http://cdn2us.denofgeek.com/sites/denofgeekus/files/jasonbateman_michael.png"},
-            {name: "Gob Bluth", hair: "Brown", eyes: "Brown", glasses:false, gender:"Male", surname:"Bluth", img: "http://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/b/e0/be024d5c-07f3-5153-b1cf-bc1e67cf5dd5/519fb7561dd53.preview-620.jpg"}
+            {name: "Gob Bluth", hair: "Brown", eyes: "Brown", glasses:false, gender:"Male", surname:"Bluth", img: "http://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/b/e0/be024d5c-07f3-5153-b1cf-bc1e67cf5dd5/519fb7561dd53.preview-620.jpg"},
+            {name: "George Michael Bluth", hair: "Brown", eyes: "Brown", glasses:false, gender:"Male", surname:"Bluth", img: "http://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/b/e0/be024d5c-07f3-5153-b1cf-bc1e67cf5dd5/519fb7561dd53.preview-620.jpg"},
+            {name: "Lindsey Bluth Funke", hair: "Blonde", eyes: "Brown", glasses:false, gender:"Female", surname:"Funke", img: "http://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/b/e0/be024d5c-07f3-5153-b1cf-bc1e67cf5dd5/519fb7561dd53.preview-620.jpg"},
+            {name: "Tobias Funke", hair: "Brown", eyes: "Brown", glasses:false, gender:"Male", surname:"Funke", img: "http://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/b/e0/be024d5c-07f3-5153-b1cf-bc1e67cf5dd5/519fb7561dd53.preview-620.jpg"},
+            {name: "Maebe Funke", hair: "Black", eyes: "Brown", glasses:false, gender:"Female", surname:"Funke", img: "http://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/b/e0/be024d5c-07f3-5153-b1cf-bc1e67cf5dd5/519fb7561dd53.preview-620.jpg"},
+            {name: "George Bluth", hair: "Brown", eyes: "Brown", glasses:false, gender:"Male", surname:"Bluth", img: "http://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/b/e0/be024d5c-07f3-5153-b1cf-bc1e67cf5dd5/519fb7561dd53.preview-620.jpg"},
+            {name: "Lucille Bluth", hair: "Brown", eyes: "Brown", glasses:false, gender:"Male", surname:"Bluth", img: "http://bloximages.newyork1.vip.townnews.com/stltoday.com/content/tncms/assets/v3/editorial/b/e0/be024d5c-07f3-5153-b1cf-bc1e67cf5dd5/519fb7561dd53.preview-620.jpg"},
         ]
         this.selectedCard = this.cards[0]
         this.questions = {
