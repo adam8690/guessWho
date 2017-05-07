@@ -6,6 +6,10 @@ class QAContainer extends React.Component{
     constructor(props){
         super(props)
         this.askQuestion = this.askQuestion.bind(this)
+        this.questionChange = this.questionChange.bind(this)
+        this.state = {
+            selectedQuestionIndex: 0
+        }
     }
 
     askQuestion(){
@@ -13,12 +17,24 @@ class QAContainer extends React.Component{
         console.log('asked a question')
         this.props.answerQuestion()
     }
-    
+
+    questionChange(){
+        this.setState({selectedQuestionIndex: document.querySelector('#question').selectedIndex})
+        console.log(this.state.selectedQuestionIndex)
+    }
+
     render(){
         console.log(Object.keys(this.props.questions))
         var questions = Object.keys(this.props.questions).map((question, index) => {
             return (
-            <option key={index}>{question}</option>
+            <option key={index} value={question}>{question}</option>
+            )
+        })
+
+        var selectedKey = Object.keys(this.props.questions)[this.state.selectedQuestionIndex]
+        var details = this.props.questions[selectedKey].map((detail, index) => {
+            return (
+                <option key={index} value={detail}>{detail}</option>
             )
         })
 
@@ -26,14 +42,16 @@ class QAContainer extends React.Component{
             <div>
                 <h3>Ask a question</h3>
                 
-                    <select name="Questions" id="question">
+                    <select name="Questions" id="question" onChange={this.questionChange}>
                         {questions}
                     </select>
 
-                    <select name="Detail" id="detail">
-                        <option>Detail</option>
-                    </select>
+                    {/*<QAComponent questions={this.questions} selectedQuestionIndex={this.state.selectedQuestionIndex}/>*/}
                     
+                    <select name="Details" id="details">
+                        {details}
+                    </select>
+
                     <button onClick={this.askQuestion}>Ask!</button>
      
             </div>
