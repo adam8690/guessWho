@@ -23,13 +23,12 @@ class QAContainer extends React.Component{
                         <option>Questions</option>
                     </select>
 
-                    <select name="Questions" id="detail">
+                    <select name="Detail" id="detail">
                         <option>Detail</option>
                     </select>
                     
                     <button onClick={this.askQuestion}>Ask!</button>
-               
-                {/*<QAComponent />*/}
+     
             </div>
         )
     }
