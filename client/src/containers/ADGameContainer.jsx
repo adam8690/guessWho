@@ -1,7 +1,7 @@
 import React from 'react'
 import CardsContainer from './CardsContainer'
 import QAContainer from './QAContainer'
-// import GuessContainer from './GuessContainer'
+import GuessContainer from './GuessContainer'
 
 class ADGameContainer extends React.Component{
 
@@ -12,7 +12,7 @@ render(){
             <h2>Arrested Development Edition</h2>
             <CardsContainer />
             <QAContainer />
-            {/*<GuessContainer />*/}
+            <GuessContainer />
         </div>
     )
 }
