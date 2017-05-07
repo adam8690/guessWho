@@ -22,11 +22,11 @@ constructor(props){
 }
 
 
-checkCorrectGuess = function(guess){
+checkCorrectGuess(guess){
     console.log("Guess button pressed", guess)
 }
 
-answerQuestion = function(question){
+answerQuestion(question){
     console.log("question button pressed", question)
 }
 
