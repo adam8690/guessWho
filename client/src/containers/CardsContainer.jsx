@@ -5,8 +5,18 @@ class CardsContainer extends React.Component{
 
     render(){
         return (
-            <div>
-                <p>CardsContainer</p>
+            <div className="cards-container">
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
                 <Card />
             </div>
         )
