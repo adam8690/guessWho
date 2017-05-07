@@ -1,5 +1,5 @@
 import React from 'react'
-// import Card from '../components/Card'
+import QAComponent from '../components/QAComponent'
 
 class QAContainer extends React.Component{
 
@@ -7,7 +7,7 @@ class QAContainer extends React.Component{
         return (
             <div>
                 <p>QAContainer</p>
-                
+                <QAComponent />
             </div>
         )
     }
