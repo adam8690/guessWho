@@ -29,26 +29,17 @@ class ADGameContainer extends React.Component{
             "Is their Surname": ["Bluth", "Funke"],
         }
         this.checkCorrectGuess = this.checkCorrectGuess.bind(this)
-        this.answerQuestion = this.answerQuestion.bind(this)
     }
 
 
     checkCorrectGuess(guess){
-        console.log("Guess button pressed", guess)
         if(this.selectedCard.name === guess){
-            console.log("Guessed correctly")
             this.setState({guess: "Correct"})
         }
         else{
-            console.log('wrong guess')
             this.setState({guess: "Incorrect"})
         }
     }
-
-    answerQuestion(question){
-        console.log("question button pressed", question)
-    }
-
 
     render(){
 
