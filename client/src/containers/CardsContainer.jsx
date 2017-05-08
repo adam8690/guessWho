@@ -8,8 +8,8 @@ class CardsContainer extends React.Component{
     }
 
     toggleClass(event){
-        console.log('toggleClass target', event.target)
-        event.target.classList.add('greyedOutCard')
+        if(event.target.classList.contains('greyedOutCard')){event.target.classList.remove('greyedOutCard')}
+        else{event.target.classList.add('greyedOutCard')}
     }
 
     render(){

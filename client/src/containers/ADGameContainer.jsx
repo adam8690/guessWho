@@ -62,7 +62,7 @@ class ADGameContainer extends React.Component{
             default:
             return (
             <div id="Game">
-                <h2>Arrested Development Edition</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Arrested_Development.svg/2000px-Arrested_Development.svg.png" />
                 <CardsContainer cards={this.cards}/>
                 <QAContainer questions={this.questions} answerQuestion={this.answerQuestion} selectedCard={this.selectedCard}/> 
                 <GuessContainer cards={this.cards} onGuessClick={this.checkCorrectGuess}/>
