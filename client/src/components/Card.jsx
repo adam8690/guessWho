@@ -1,6 +1,5 @@
 import React from 'react'
 
-// stateless component const?
 var Card = function(props){
     
     return (
